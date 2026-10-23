@@ -1,0 +1,26 @@
+WE ROCK · BRAND KIT v1.0 (octubre 2026)
+========================================
+
+logos/svg      Vectores para web, Figma, Canva e Illustrator.
+logos/pdf      Vectores para imprenta (abren editables en Illustrator).
+logos/png      Fondo transparente, 800 y 2400 px de ancho.
+logos/redes    Avatares cuadrados 1080 px (Instagram, LinkedIn, WhatsApp).
+logos/favicon  Favicon SVG y PNG 32 / 180 / 192 / 512 px.
+we-rock-colores.css   Paleta oficial en variables CSS.
+
+QUÉ VERSIÓN USAR
+  Fondo negro u oscuro ...... we-rock-negativo
+  Fondo blanco o crema ...... we-rock-positivo
+  Fondo rojo ................ we-rock-sobre-rojo
+  Fotos u otros colores ..... we-rock-mono-blanco
+  Una sola tinta ............ we-rock-mono-negro
+
+REGLAS BÁSICAS
+  Área de protección: un espacio igual al diámetro del círculo R por cada lado.
+  Tamaño mínimo: 120 px digital, 25 mm impreso. Más pequeño, usar el rayo.
+  Nunca estirar, rotar, cambiar colores, poner sombras ni reescribir el logo.
+  Colores: Rojo #E8000A, Negro #0A0A0A, Crema #F5F2EB, Blanco #FFFFFF.
+  Tipografía: Barlow (Google Fonts). Alternativa: Arial.
+
+Guía completa con ejemplos: ver la página del Brand Kit.
+Dudas: David, WhatsApp +57 312 576 6056.

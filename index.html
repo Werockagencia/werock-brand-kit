@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Brand Kit We Rock</title>
+<meta name="description" content="Logos en vectores, colores, tipografía y reglas de uso de la marca We Rock.">
+<link rel="icon" href="descargas/logos/favicon/favicon.svg" type="image/svg+xml">
+<style>
+@font-face{font-family:Barlow;font-weight:400;src:url(src/barlow-400.woff2) format("woff2");font-display:swap}
+@font-face{font-family:Barlow;font-weight:700;src:url(src/barlow-700.woff2) format("woff2");font-display:swap}
+@font-face{font-family:Barlow;font-weight:800;src:url(src/barlow-800.woff2) format("woff2");font-display:swap}
+@font-face{font-family:Barlow;font-weight:900;src:url(src/barlow-900.woff2) format("woff2");font-display:swap}
+@font-face{font-family:Barlow;font-weight:900;font-style:italic;src:url(src/barlow-900i.woff2) format("woff2");font-display:swap}
+
+/* Layout: secciones a todo el ancho con el ritmo de la marca (negro / crema / rojo), contenido a 1180px */
+:root{
+  --red:#E8000A; --red-h:#FF1A22;
+  --dk:#0A0A0A; --dk2:#111111; --dk3:#161616;
+  --lt:#F5F2EB; --lt2:#EDE9DF; --lt3:#E4DFD4;
+  --white:#FFFFFF; --gray:#888888; --gray2:#555555;
+  --tx-dk:#E8E4DC; --tx-dk2:#AAAAAA;
+  --f:Barlow, "Arial Narrow", Arial, Helvetica, sans-serif;
+  --mono:ui-monospace, "Cascadia Mono", Consolas, monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--dk);color:var(--tx-dk);font:400 17px/1.6 var(--f);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+section{padding-block:96px}
+.s-dark{background:var(--dk)}
+.s-dark2{background:var(--dk2)}
+.s-light{background:var(--lt);color:#0F0E0C}
+.s-red{background:var(--red);color:var(--white)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:rgba(10,10,10,.92);backdrop-filter:blur(10px);border-bottom:1px solid #1d1d1d}
+nav .wrap{display:flex;align-items:center;gap:28px;height:62px}
+nav .logo{height:30px;width:auto;flex:none}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+nav ul::-webkit-scrollbar{display:none}
+nav ul a{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:var(--tx-dk2);white-space:nowrap}
+nav ul a:hover{color:var(--white)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:var(--white);font:800 14px/1 var(--f);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:15px 22px;border-radius:2px;border:0;cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--red-h)}
+.btn.ghost{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}
+.btn.ghost:hover{background:rgba(255,255,255,.08)}
+.btn.ink{background:var(--dk)}
+.btn.ink:hover{background:#262626}
+nav .btn{padding:11px 16px;font-size:12px;flex:none}
+@media (max-width:820px){nav ul{display:none} nav .wrap{justify-content:space-between}}
+
+/* tipografía de sección */
+.label{font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin:0 0 18px}
+.s-red .label{color:var(--dk)}
+h1,h2,h3{font-weight:900;text-transform:uppercase;line-height:.95;letter-spacing:-.01em;margin:0;text-wrap:balance}
+h2{font-size:clamp(38px,5vw,64px)}
+h3{font-size:22px;font-weight:800;letter-spacing:0;line-height:1.1}
+.lead{font-size:20px;max-width:62ch;color:var(--tx-dk2);margin:22px 0 0}
+.s-light .lead{color:#4a4741}
+.head{display:grid;grid-template-columns:1fr auto;align-items:end;gap:24px;margin-bottom:56px}
+.head>div{min-width:0}
+@media (max-width:820px){.head{grid-template-columns:1fr}}
+.red{color:var(--red)}
+
+/* hero */
+.hero{padding-block:88px 72px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);background-size:22px 22px;mask-image:linear-gradient(to bottom,#000,transparent 85%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(54px,9vw,128px);color:var(--white)}
+.hero h1 em{font-style:italic;color:var(--red)}
+.hero .lead{color:var(--tx-dk)}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:40px;font-size:13px;color:var(--tx-dk2)}
+.hero .meta b{color:var(--white);font-weight:700}
+.hero-logo{background:var(--dk3);border:1px solid #222;aspect-ratio:1;display:grid;place-items:center;padding:16%;position:relative}
+.hero-logo span{position:absolute;left:16px;bottom:12px;font:600 11px/1 var(--mono);color:var(--gray)}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.hero-logo{max-width:420px}}
+
+/* esencia */
+.essence{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#d9d3c6}
+.essence>div{background:var(--lt);padding:32px 28px;min-width:0}
+.essence p{margin:12px 0 0;color:#4a4741}
+.do-dont{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px}
+.do-dont>div{min-width:0}
+.do-dont h3{font-size:14px;letter-spacing:.18em;margin-bottom:14px}
+.do-dont ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.do-dont li{padding:14px 16px;background:var(--white);border-left:3px solid #1d7a3d;font-size:16px}
+.do-dont .no li{border-left-color:var(--red)}
+@media (max-width:820px){.essence,.do-dont{grid-template-columns:1fr}}
+
+/* logos */
+.anatomy{display:grid;grid-template-columns:1.3fr 1fr;gap:2px;background:#1f1f1f;margin-bottom:64px}
+.anatomy>div{background:var(--dk3);padding:40px;min-width:0}
+.anatomy svg{width:100%;height:auto;overflow:visible}
+.anatomy dl{margin:0;display:grid;gap:22px}
+.anatomy dt{font-weight:800;color:var(--white);font-size:18px;display:flex;gap:10px;align-items:baseline}
+.anatomy dt i{font:600 12px/1 var(--mono);color:var(--red);font-style:normal}
+.anatomy dd{margin:6px 0 0;color:var(--tx-dk2);font-size:15px}
+@media (max-width:900px){.anatomy{grid-template-columns:1fr}.anatomy>div{padding:28px 20px}}
+
+.grid{display:grid;gap:20px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+@media (max-width:980px){.g3,.g4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.g3,.g4,.g2{grid-template-columns:1fr}}
+
+.card{display:flex;flex-direction:column;min-width:0;background:var(--dk3);border:1px solid #232323}
+.card .stage{aspect-ratio:16/10;display:grid;place-items:center;padding:14% 18%}
+.card .stage img{max-height:100%;width:auto;max-width:100%}
+.card .body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card .body p{margin:0;font-size:14px;color:var(--tx-dk2);flex:1}
+.card .dl{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chip{font:700 11px/1 var(--f);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:9px 11px;border:1px solid #3a3a3a;color:var(--tx-dk);border-radius:2px;transition:all .15s}
+.chip:hover{border-color:var(--red);background:var(--red);color:var(--white)}
+.bg-lt{background:var(--lt)}.bg-dk{background:var(--dk)}.bg-red{background:var(--red)}.bg-w{background:var(--white)}.bg-dk3{background:#2a2a2a}
+.checker{background-color:#e9e9e9;background-image:linear-gradient(45deg,#d4d4d4 25%,transparent 25%),linear-gradient(-45deg,#d4d4d4 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#d4d4d4 75%),linear-gradient(-45deg,transparent 75%,#d4d4d4 75%);background-size:16px 16px;background-position:0 0,0 8px,8px -8px,-8px 0}
+.sub{margin:72px 0 28px;display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}
+.sub h3{font-size:28px;font-weight:900;text-transform:uppercase}
+.sub p{margin:6px 0 0;color:var(--tx-dk2);max-width:60ch}
+.note{font-size:14px;color:var(--tx-dk2);border-left:2px solid var(--red);padding:4px 0 4px 16px;margin-top:28px;max-width:80ch}
+.s-light .note{color:#4a4741}
+
+/* reglas */
+.rules{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start}
+.rules>div{min-width:0}
+.space{background:var(--white);padding:48px 32px;display:grid;place-items:center}
+.space svg{width:100%;max-width:560px;height:auto;overflow:visible}
+.rule-list{display:grid;gap:0;margin:0;padding:0;list-style:none;border-top:1px solid #d9d3c6}
+.rule-list li{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid #d9d3c6}
+.rule-list b{font-weight:800;text-transform:uppercase;font-size:13px;letter-spacing:.12em;padding-top:3px}
+.rule-list span{color:#3a3833}
+.sizes{display:flex;align-items:flex-end;gap:28px;flex-wrap:wrap;margin-top:28px}
+.sizes figure{margin:0;display:grid;gap:8px;justify-items:start}
+.sizes figcaption{font:600 12px/1.3 var(--mono);color:#6b675f}
+.bgmap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:56px}
+.bgmap>div{padding:28px 20px 18px;display:grid;gap:18px;min-width:0}
+.bgmap img{height:56px;width:auto}
+.bgmap small{font:600 12px/1.35 var(--mono)}
+@media (max-width:900px){.rules{grid-template-columns:1fr}.bgmap{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.rule-list li{grid-template-columns:1fr;gap:4px}}
+
+/* incorrectos */
+.wrong .stage{aspect-ratio:4/3;display:grid;place-items:center;padding:16%;position:relative;overflow:hidden}
+.wrong .stage::after{content:"";position:absolute;inset:0;background:linear-gradient(to top right,transparent calc(50% - 1.5px),rgba(232,0,10,.85) calc(50% - 1.5px),rgba(232,0,10,.85) calc(50% + 1.5px),transparent calc(50% + 1.5px))}
+.wrong .stage img{max-height:100%;width:auto}
+.wrong .body{padding:16px 18px 18px}
+.wrong h3{font-size:16px}
+.wrong p{font-size:14px;color:var(--tx-dk2);margin:6px 0 0}
+.fakefont{display:flex;align-items:center;gap:6px}
+.fakefont img{height:64px}
+.fakefont span{font:italic 700 34px/0.9 Georgia,"Times New Roman",serif;color:var(--dk)}
+
+/* color */
+.swatches{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:2px}
+.sw{min-height:300px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;min-width:0;border:0;text-align:left;font:inherit;color:inherit;cursor:pointer;position:relative}
+.sw h3{font-size:26px;font-weight:900;text-transform:uppercase}
+.sw dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font:500 12px/1.5 var(--mono)}
+.sw dt{opacity:.6}
+.sw dd{margin:0;word-break:break-word}
+.sw .pct{font:700 11px/1 var(--f);letter-spacing:.18em;text-transform:uppercase;opacity:.75}
+.sw .copied{position:absolute;top:16px;right:16px;font:700 11px/1 var(--f);letter-spacing:.14em;text-transform:uppercase;background:var(--dk);color:var(--white);padding:7px 9px;opacity:0;transition:opacity .2s}
+.sw.ok .copied{opacity:1}
+.sw:hover h3{text-decoration:underline;text-underline-offset:5px}
+@media (max-width:900px){.swatches{grid-template-columns:1fr 1fr}.sw:first-child{grid-column:1/-1}}
+.secondary{display:grid;grid-template-columns:repeat(4,1fr);gap:16px 12px;margin-top:28px}
+@media (max-width:620px){.secondary{grid-template-columns:1fr 1fr}}
+.mini{border:0;font:inherit;text-align:left;cursor:pointer;padding:0;background:none;color:inherit;display:grid;gap:8px}
+.mini i{display:block;height:64px;border:1px solid #2a2a2a}
+.mini b{font-size:14px;font-weight:700;color:var(--white)}
+.mini small{font:500 12px/1.4 var(--mono);color:var(--tx-dk2)}
+.ratio{display:flex;height:22px;margin-top:40px;border:1px solid #2a2a2a}
+.ratio i{display:block}
+
+/* tipografía */
+.type-hero{font-weight:900;text-transform:uppercase;font-size:clamp(36px,10.5vw,190px);line-height:.85;letter-spacing:-.02em;color:#0F0E0C;margin:0}
+.weights{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:#d9d3c6;margin-top:48px}
+.weights>div{background:var(--lt);padding:24px;min-width:0}
+.weights .sample{font-size:44px;line-height:1;text-transform:uppercase;margin-top:14px}
+.weights small{font:600 12px/1.4 var(--mono);color:#6b675f}
+.scale{margin-top:48px;border-top:1px solid #d9d3c6}
+.scale>div{display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:baseline;padding:22px 0;border-bottom:1px solid #d9d3c6}
+.scale>div>*{min-width:0}
+.scale small{font:600 12px/1.5 var(--mono);color:#6b675f}
+@media (max-width:520px){.weights{grid-template-columns:1fr!important}}
+@media (max-width:820px){.weights{grid-template-columns:1fr 1fr}.scale>div{grid-template-columns:1fr;gap:8px}}
+
+/* sistema gráfico / aplicaciones */
+.apps{display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+.apps>figure{margin:0;min-width:0;display:grid;grid-template-columns:minmax(0,1fr);gap:12px;align-content:start}
+.apps figcaption{font-size:13px;color:var(--tx-dk2)}
+.apps figcaption b{color:var(--white);font-weight:700;display:block;font-size:15px}
+.a-post{grid-column:span 5}.a-story{grid-column:span 3}.a-card{grid-column:span 4}
+.a-sign{grid-column:span 7}.a-avatar{grid-column:span 5}
+@media (max-width:980px){.apps>figure{grid-column:span 6}}
+@media (max-width:620px){.apps>figure{grid-column:1/-1}}
+.post{aspect-ratio:4/5;background:var(--dk);position:relative;overflow:hidden;padding:7% 8%;display:flex;flex-direction:column;justify-content:space-between;color:var(--white)}
+.post::before{content:"";position:absolute;inset:0;opacity:.18;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");pointer-events:none}
+.post .mast{display:flex;justify-content:space-between;font-size:clamp(9px,1.1vw,12px);font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--tx-dk2);position:relative}
+.post .ghost{position:absolute;right:-4%;bottom:-12%;font-weight:900;font-size:clamp(150px,22vw,300px);line-height:1;color:#161616}
+.post h4{position:relative;margin:0;font-weight:900;text-transform:uppercase;font-size:clamp(26px,3.6vw,46px);line-height:.92}
+.post .foot{position:relative;display:flex;justify-content:space-between;align-items:end}
+.post .foot img{height:clamp(22px,2.6vw,34px);width:auto}
+.post .foot span{font-size:11px;letter-spacing:.18em;font-weight:700;color:var(--tx-dk2)}
+.story{aspect-ratio:9/16;background:var(--red);display:flex;flex-direction:column;justify-content:space-between;padding:12% 10%;color:var(--white)}
+.story img{height:clamp(22px,2.4vw,30px);width:auto}
+.story h4{margin:0;font-weight:900;text-transform:uppercase;font-size:clamp(24px,2.6vw,34px);line-height:.92}
+.story .cta{background:var(--white);color:var(--dk);font-weight:800;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:12px;text-align:center}
+.bizcard{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.bizcard>div{aspect-ratio:85/55;padding:7%;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.bizcard .front{background:var(--dk);justify-content:center;align-items:center}
+.bizcard .front img{width:46%}
+.bizcard .back{background:var(--lt);color:#0F0E0C}
+.bizcard .back b{font-weight:900;text-transform:uppercase;font-size:clamp(15px,1.6vw,19px);line-height:1}
+.bizcard .back small{display:block;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:700;margin-top:4px}
+.bizcard .back p{margin:0;font-size:clamp(10px,1vw,12px);line-height:1.5}
+.bizcard .back .row{display:flex;justify-content:space-between;align-items:end}
+.bizcard .back img{height:26px;width:auto}
+.sign{background:var(--white);color:#222;padding:28px;font:14px/1.5 Arial,Helvetica,sans-serif}
+.sign .mail{color:#888;font-size:12px;border-bottom:1px solid #eee;padding-bottom:14px;margin-bottom:18px}
+.sign .row{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.sign img{height:44px;width:auto}
+.sign .bar{width:2px;align-self:stretch;background:var(--red)}
+.sign b{display:block;font-size:15px;color:#0a0a0a}
+.sign small{display:block;color:#666}
+.avatars{display:flex;gap:18px;align-items:center;flex-wrap:wrap;background:var(--dk3);padding:28px;border:1px solid #232323}
+.avatars img{width:120px;height:120px;border-radius:50%}
+.avatars .fav{display:flex;gap:12px;align-items:end}
+.avatars .fav img{border-radius:0;height:auto}
+
+/* voz */
+.voice{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.voice>div{min-width:0}
+.voice h3{color:var(--white);margin-bottom:16px}
+.copy-rules{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.copy-rules li{padding:16px 18px;background:var(--dk3);border:1px solid #232323;font-size:16px}
+.copy-rules li b{color:var(--white)}
+.contact{display:grid;gap:12px;margin-top:8px}
+.contact div{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid #222;font-size:16px}
+.contact dt{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--tx-dk2);padding-top:4px}
+.contact dd{margin:0;color:var(--white);word-break:break-word}
+@media (max-width:820px){.voice{grid-template-columns:1fr}}
+
+/* descargas */
+.packs{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(0,0,0,.25)}
+.pack{background:var(--red);padding:28px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:var(--white);transition:background .15s;min-width:0}
+.pack:hover{background:#c90009}
+.pack.big{grid-column:1/-1;background:var(--dk);flex-direction:row;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:36px}
+.pack.big:hover{background:#1a1a1a}
+.pack h3{font-size:24px;font-weight:900;text-transform:uppercase}
+.pack p{margin:0;font-size:15px;opacity:.88;flex:1}
+.pack span{font:700 12px/1 var(--f);letter-spacing:.16em;text-transform:uppercase}
+.pack .arrow{font-size:13px;letter-spacing:.14em;font-weight:800;text-transform:uppercase;border-bottom:2px solid currentColor;align-self:flex-start;padding-bottom:3px}
+@media (max-width:900px){.packs{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.packs{grid-template-columns:1fr}}
+
+footer{background:var(--dk);padding-block:48px;border-top:1px solid #1d1d1d;font-size:14px;color:var(--gray)}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+footer img{height:32px;width:auto}
+</style>
+</head>
+<body>
+
+<nav aria-label="Secciones">
+  <div class="wrap">
+    <a href="#inicio"><img class="logo" src="descargas/logos/svg/we-rock-negativo.svg" alt="We Rock"></a>
+    <ul>
+      <li><a href="#esencia">Esencia</a></li>
+      <li><a href="#logo">Logo</a></li>
+      <li><a href="#reglas">Reglas</a></li>
+      <li><a href="#color">Color</a></li>
+      <li><a href="#tipografia">Tipografía</a></li>
+      <li><a href="#aplicaciones">Aplicaciones</a></li>
+      <li><a href="#voz">Voz</a></li>
+    </ul>
+    <a class="btn" href="#descargas">Descargas</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero s-dark" id="inicio">
+  <div class="wrap">
+    <div>
+      <p class="label">Brand Kit · Uso interno del equipo</p>
+      <h1>La marca<br>que <em>rockea</em><br>se usa bien.</h1>
+      <p class="lead">Todo lo que necesitas para aplicar la marca We Rock sin adivinar: logos en vectores, colores exactos, tipografía, reglas de uso y ejemplos. Si algo no está aquí, pregunta antes de inventarlo.</p>
+      <div class="actions">
+        <a class="btn" href="descargas/we-rock-brand-kit-completo.zip">Descargar kit completo (.zip)</a>
+        <a class="btn ghost" href="#logo">Ver los logos</a>
+      </div>
+      <div class="meta">
+        <span><b>8</b> versiones del logo</span>
+        <span><b>SVG · PDF · PNG</b></span>
+        <span>Actualizado <b>octubre 2026</b></span>
+      </div>
+    </div>
+    <div class="hero-logo">
+      <img src="descargas/logos/svg/we-rock-negativo.svg" alt="Logo We Rock en versión negativa">
+      <span>we-rock-negativo.svg</span>
+    </div>
+  </div>
+</header>
+
+<!-- ESENCIA -->
+<section class="s-light" id="esencia">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">01 · Esencia</p>
+        <h2>Quiénes somos<br>antes de cómo nos vemos</h2>
+        <p class="lead">Cada pieza que sale con el logo de We Rock tiene que sonar y verse como una firma que diseña y opera sistemas de crecimiento. Esa es la vara.</p>
+      </div>
+    </div>
+    <div class="essence">
+      <div><h3>Firma de crecimiento estratégico</h3><p>We Rock no es una agencia. Diseñamos y operamos sistemas empresariales de crecimiento: marketing, tecnología y ventas bajo una sola dirección.</p></div>
+      <div><h3>Consultivo y directo</h3><p>Hablamos como un socio que sabe lo que hace: claro, premium y humano. Sin relleno, sin promesas infladas, sin jerga sin traducir.</p></div>
+      <div><h3>Contraste y energía</h3><p>Negro profundo, rojo eléctrico y crema. Tipografía condensada en mayúsculas, mucho aire y un rayo que marca el ritmo. Es rock, con estructura.</p></div>
+    </div>
+    <div class="do-dont">
+      <div class="si">
+        <h3>Así sí</h3>
+        <ul>
+          <li>"Firma", "sistemas", "estructura", "dirección estratégica"</li>
+          <li>Datos reales y verificables (4.9★ en Google, casos con permiso del cliente)</li>
+          <li>Frases cortas, verbos fuertes, cierre con llamado a la acción</li>
+        </ul>
+      </div>
+      <div class="no">
+        <h3>Así no</h3>
+        <ul>
+          <li>La palabra "agencia" para referirnos a We Rock</li>
+          <li>Cifras inventadas o resultados que no podemos demostrar</li>
+          <li>Tecnicismos sin explicar o tono de vendedor desesperado</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGO -->
+<section class="s-dark2" id="logo">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">02 · Logo</p>
+        <h2>Un logo,<br>cinco versiones</h2>
+        <p class="lead">Extraídos del archivo maestro original en Illustrator. Son vectores reales: escalan a cualquier tamaño sin perder calidad. Usa el SVG para web y diseño, el PDF para imprenta e Illustrator y el PNG solo cuando no haya otra opción.</p>
+      </div>
+      <a class="btn ghost" href="descargas/we-rock-logos-svg.zip">Todos en SVG</a>
+    </div>
+
+    <div class="anatomy">
+      <div>
+        <svg viewBox="-10 -40 340 270" role="img" aria-label="Anatomía del logo: rayo, wordmark y círculo R">
+          <image href="descargas/logos/svg/we-rock-negativo.svg" x="0" y="0" width="318.895" height="194.879"/>
+          <g fill="none" stroke="#888" stroke-width=".8" stroke-dasharray="3 3">
+            <rect x="-2" y="-2" width="70.6" height="198.9"/>
+            <rect x="70.3" y="-2" width="250.6" height="198.9"/>
+            <circle cx="287.9" cy="18.6" r="23"/>
+          </g>
+          <g font-family="ui-monospace,Consolas,monospace" font-size="10" fill="#E8000A" font-weight="600">
+            <text x="0" y="214">A</text><text x="180" y="214">B</text><text x="312" y="-24">C</text>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <dl>
+          <div><dt><i>A</i>El rayo</dt><dd>Símbolo de energía y acción. Siempre en rojo, salvo sobre fondo rojo (pasa a negro) y en versiones monocromas.</dd></div>
+          <div><dt><i>B</i>El wordmark</dt><dd>"WE ROCK" en dos líneas, condensado y en negrita extrema. Blanco sobre oscuro, negro sobre claro. No se reescribe con ninguna fuente: siempre se usa el archivo.</dd></div>
+          <div><dt><i>C</i>El círculo R</dt><dd>Sello de cierre. Acompaña al rayo en color y nunca se separa del logo.</dd></div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="grid g3">
+      <article class="card">
+        <div class="stage bg-dk"><img src="descargas/logos/svg/we-rock-negativo.svg" alt="We Rock negativo"></div>
+        <div class="body"><h3>Negativo · principal</h3><p>La versión de la casa. Para fondos negros u oscuros: web, redes, presentaciones.</p>
+          <div class="dl"><a class="chip" href="descargas/logos/svg/we-rock-negativo.svg" download>SVG</a><a class="chip" href="descargas/logos/pdf/we-rock-negativo.pdf" download>PDF</a><a class="chip" href="descargas/logos/png/we-rock-negativo-2400px.png" download>PNG 2400</a><a class="chip" href="descargas/logos/png/we-rock-negativo-800px.png" download>PNG 800</a></div></div>
+      </article>
+      <article class="card">
+        <div class="stage bg-lt"><img src="descargas/logos/svg/we-rock-positivo.svg" alt="We Rock positivo"></div>
+        <div class="body"><h3>Positivo</h3><p>Para fondos blancos o crema: documentos, propuestas impresas, papelería.</p>
+          <div class="dl"><a class="chip" href="descargas/logos/svg/we-rock-positivo.svg" download>SVG</a><a class="chip" href="descargas/logos/pdf/we-rock-positivo.pdf" download>PDF</a><a class="chip" href="descargas/logos/png/we-rock-positivo-2400px.png" download>PNG 2400</a><a class="chip" href="descargas/logos/png/we-rock-positivo-800px.png" download>PNG 800</a></div></div>
+      </article>
+      <article class="card">
+        <div class="stage bg-red"><img src="descargas/logos/svg/we-rock-sobre-rojo.svg" alt="We Rock sobre rojo"></div>
+        <div class="body"><h3>Sobre rojo</h3><p>Rayo y círculo en negro, wordmark en blanco. La única forma correcta de poner el logo sobre rojo.</p>
+          <div class="dl"><a class="chip" href="descargas/logos/svg/we-rock-sobre-rojo.svg" download>SVG</a><a class="chip" href="descargas/logos/pdf/we-rock-sobre-rojo.pdf" download>PDF</a><a class="chip" href="descargas/logos/png/we-rock-sobre-rojo-2400px.png" download>PNG 2400</a><a class="chip" href="descargas/logos/png/we-rock-sobre-rojo-800px.png" download>PNG 800</a></div></div>
+      </article>
+      <article class="card">
+        <div class="stage bg-w"><img src="descargas/logos/svg/we-rock-mono-negro.svg" alt="We Rock monocromo negro"></div>
+        <div class="body"><h3>Monocromo negro</h3><p>Impresión a una tinta, sellos, grabados, fax, documentos legales.</p>
+          <div class="dl"><a class="chip" href="descargas/logos/svg/we-rock-mono-negro.svg" download>SVG</a><a class="chip" href="descargas/logos/pdf/we-rock-mono-negro.pdf" download>PDF</a><a class="chip" href="descargas/logos/png/we-rock-mono-negro-2400px.png" download>PNG 2400</a><a class="chip" href="descargas/logos/png/we-rock-mono-negro-800px.png" download>PNG 800</a></div></div>
+      </article>
+      <article class="card">
+        <div class="stage bg-dk3"><img src="descargas/logos/svg/we-rock-mono-blanco.svg" alt="We Rock monocromo blanco"></div>
+        <div class="body"><h3>Monocromo blanco</h3><p>Sobre fotografías oscuras, video, fondos de color que no son de la marca.</p>
+          <div class="dl"><a class="chip" href="descargas/logos/svg/we-rock-mono-blanco.svg" download>SVG</a><a class="chip" href="descargas/logos/pdf/we-rock-mono-blanco.pdf" download>PDF</a><a class="chip" href="descargas/logos/png/we-rock-mono-blanco-2400px.png" download>PNG 2400</a><a class="chip" href="descargas/logos/png/we-rock-mono-blanco-800px.png" download>PNG 800</a></div></div>
+      </article>
+      <article class="card">
+        <div class="stage checker"><img src="descargas/logos/svg/we-rock-positivo.svg" alt="Fondo transparente"></div>
+        <div class="body"><h3>Fondo transparente</h3><p>Todos los archivos vienen sin fondo. El cuadriculado solo indica transparencia; no hace parte del logo.</p>
+          <div class="dl"><a class="chip" href="descargas/we-rock-logos-png.zip">Todos los PNG (.zip)</a><a class="chip" href="descargas/we-rock-logos-pdf.zip">Todos los PDF (.zip)</a></div></div>
+      </article>
+    </div>
+
+    <div class="sub">
+      <div><h3>Rayo, avatares y favicon</h3><p>Piezas derivadas para espacios pequeños o cuadrados. El rayo solo no reemplaza al logo: se usa como ícono cuando el logo completo no cabe o no se lee.</p></div>
+      <a class="btn ghost" href="descargas/we-rock-redes-favicon.zip">Avatares + favicon (.zip)</a>
+    </div>
+    <div class="grid g4">
+      <article class="card">
+        <div class="stage bg-dk" style="aspect-ratio:1;padding:22%"><img src="descargas/logos/svg/we-rock-rayo-rojo.svg" alt="Rayo rojo"></div>
+        <div class="body"><h3>Rayo</h3><p>Ícono de apps, sellos pequeños, patrones.</p>
+          <div class="dl"><a class="chip" href="descargas/logos/svg/we-rock-rayo-rojo.svg" download>Rojo</a><a class="chip" href="descargas/logos/svg/we-rock-rayo-negro.svg" download>Negro</a><a class="chip" href="descargas/logos/svg/we-rock-rayo-blanco.svg" download>Blanco</a></div></div>
+      </article>
+      <article class="card">
+        <div class="stage bg-dk" style="aspect-ratio:1;padding:12%"><img src="descargas/logos/redes/we-rock-avatar-rojo-1080px.png" alt="Avatar rojo" style="border-radius:50%"></div>
+        <div class="body"><h3>Avatar rojo</h3><p>Foto de perfil en Instagram, LinkedIn, WhatsApp Business.</p>
+          <div class="dl"><a class="chip" href="descargas/logos/redes/we-rock-avatar-rojo-1080px.png" download>PNG 1080</a><a class="chip" href="descargas/logos/redes/we-rock-avatar-rojo.svg" download>SVG</a></div></div>
+      </article>
+      <article class="card">
+        <div class="stage bg-dk3" style="aspect-ratio:1;padding:12%"><img src="descargas/logos/redes/we-rock-avatar-negro-1080px.png" alt="Avatar negro" style="border-radius:50%"></div>
+        <div class="body"><h3>Avatar negro</h3><p>Alternativa para plataformas con interfaz clara.</p>
+          <div class="dl"><a class="chip" href="descargas/logos/redes/we-rock-avatar-negro-1080px.png" download>PNG 1080</a><a class="chip" href="descargas/logos/redes/we-rock-avatar-negro.svg" download>SVG</a></div></div>
+      </article>
+      <article class="card">
+        <div class="stage bg-lt" style="aspect-ratio:1;padding:30%"><img src="descargas/logos/favicon/favicon.svg" alt="Favicon"></div>
+        <div class="body"><h3>Favicon</h3><p>Pestaña del navegador, ícono en iPhone y Android.</p>
+          <div class="dl"><a class="chip" href="descargas/logos/favicon/favicon.svg" download>SVG</a><a class="chip" href="descargas/logos/favicon/favicon-512px.png" download>512</a><a class="chip" href="descargas/logos/favicon/favicon-180px.png" download>180</a><a class="chip" href="descargas/logos/favicon/favicon-32px.png" download>32</a></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- REGLAS -->
+<section class="s-light" id="reglas">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">03 · Reglas de uso</p>
+        <h2>Aire, tamaño<br>y el fondo correcto</h2>
+        <p class="lead">Tres reglas que resuelven el 90% de los problemas con un logo.</p>
+      </div>
+    </div>
+    <div class="rules">
+      <div class="space">
+        <svg viewBox="-60 -60 440 316" role="img" aria-label="Área de protección: un espacio libre igual al diámetro del círculo R por cada lado">
+          <rect x="-36.4" y="-36.4" width="391.7" height="267.7" fill="#E8000A" fill-opacity=".06" stroke="#E8000A" stroke-width="1" stroke-dasharray="4 4"/>
+          <image href="descargas/logos/svg/we-rock-positivo.svg" x="0" y="0" width="318.895" height="194.879"/>
+          <g fill="#E8000A" fill-opacity=".22" stroke="#E8000A" stroke-width=".8">
+            <rect x="-36.4" y="-36.4" width="36.4" height="36.4"/>
+            <rect x="318.9" y="-36.4" width="36.4" height="36.4"/>
+            <rect x="-36.4" y="194.9" width="36.4" height="36.4"/>
+            <rect x="318.9" y="194.9" width="36.4" height="36.4"/>
+          </g>
+          <g font-family="ui-monospace,Consolas,monospace" font-size="13" font-weight="700" fill="#E8000A" text-anchor="middle">
+            <text x="-18.2" y="-13">x</text><text x="337.1" y="-13">x</text><text x="-18.2" y="218">x</text><text x="337.1" y="218">x</text>
+          </g>
+          <circle cx="287.9" cy="18.6" r="18.2" fill="none" stroke="#E8000A" stroke-width="1.4"/>
+          <text x="287.9" y="-44" font-family="ui-monospace,Consolas,monospace" font-size="12" font-weight="700" fill="#E8000A" text-anchor="middle">x = Ø círculo R</text>
+          <line x1="287.9" y1="-38" x2="287.9" y2="-1" stroke="#E8000A" stroke-width=".8"/>
+        </svg>
+      </div>
+      <div>
+        <ul class="rule-list">
+          <li><b>Área de protección</b><span>Deja libre alrededor del logo un espacio igual al diámetro del círculo R (x). Ningún texto, borde de pieza o imagen entra en esa zona.</span></li>
+          <li><b>Tamaño mínimo</b><span>Digital: 120 px de ancho. Impreso: 25 mm de ancho. Más pequeño, el círculo R se empasta; usa el rayo solo.</span></li>
+          <li><b>Proporción</b><span>Escala siempre con Shift (o bloqueando proporciones). El logo nunca se estira, se aplana ni se inclina.</span></li>
+          <li><b>Un solo logo</b><span>Una aparición por pieza o por cara. En carruseles, el logo va en la primera y la última lámina.</span></li>
+        </ul>
+        <div class="sizes" aria-label="Ejemplos de tamaño">
+          <figure><img src="descargas/logos/svg/we-rock-positivo.svg" alt="" style="width:200px"><figcaption>200 px · ideal</figcaption></figure>
+          <figure><img src="descargas/logos/svg/we-rock-positivo.svg" alt="" style="width:120px"><figcaption>120 px · mínimo</figcaption></figure>
+          <figure><img src="descargas/logos/svg/we-rock-rayo-rojo.svg" alt="" style="height:40px;width:auto"><figcaption>&lt; 120 px · rayo</figcaption></figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="bgmap" aria-label="Qué versión usar según el fondo">
+      <div style="background:var(--dk);color:var(--tx-dk)"><img src="descargas/logos/svg/we-rock-negativo.svg" alt=""><small>Negro / oscuro → Negativo</small></div>
+      <div style="background:var(--white);border:1px solid #d9d3c6"><img src="descargas/logos/svg/we-rock-positivo.svg" alt=""><small>Blanco / crema → Positivo</small></div>
+      <div style="background:var(--red);color:var(--white)"><img src="descargas/logos/svg/we-rock-sobre-rojo.svg" alt=""><small>Rojo → Sobre rojo</small></div>
+      <div style="background:linear-gradient(135deg,#3b4a5a,#7a6a58);color:var(--white)"><img src="descargas/logos/svg/we-rock-mono-blanco.svg" alt=""><small>Foto / otro color → Mono blanco</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- INCORRECTOS -->
+<section class="s-dark">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">04 · Usos incorrectos</p>
+        <h2>Lo que nunca<br>le hacemos al logo</h2>
+        <p class="lead">Si una pieza necesita alguno de estos cambios para "funcionar", el problema es la pieza, no el logo.</p>
+      </div>
+    </div>
+    <div class="grid g4 wrong">
+      <article class="card"><div class="stage bg-dk"><img src="descargas/logos/svg/we-rock-negativo.svg" alt="" style="transform:scaleX(1.45)"></div><div class="body"><h3>Estirar o aplanar</h3><p>Siempre escala proporcional.</p></div></article>
+      <article class="card"><div class="stage bg-dk"><img src="descargas/logos/svg/we-rock-negativo.svg" alt="" style="transform:rotate(-14deg)"></div><div class="body"><h3>Rotar o inclinar</h3><p>El logo va siempre horizontal.</p></div></article>
+      <article class="card"><div class="stage bg-red"><img src="descargas/logos/svg/we-rock-negativo.svg" alt=""></div><div class="body"><h3>Rayo rojo sobre rojo</h3><p>El rayo desaparece. Usa la versión sobre rojo.</p></div></article>
+      <article class="card"><div class="stage bg-dk"><img src="descargas/logos/svg/we-rock-negativo.svg" alt="" style="filter:hue-rotate(200deg) saturate(1.4)"></div><div class="body"><h3>Cambiar colores</h3><p>Solo rojo, negro y blanco.</p></div></article>
+      <article class="card"><div class="stage bg-lt"><img src="descargas/logos/svg/we-rock-positivo.svg" alt="" style="filter:drop-shadow(6px 8px 4px rgba(0,0,0,.55))"></div><div class="body"><h3>Sombras y efectos</h3><p>Nada de sombras, brillos, biseles ni degradados.</p></div></article>
+      <article class="card"><div class="stage" style="background:#3a3a3a"><img src="descargas/logos/svg/we-rock-positivo.svg" alt=""></div><div class="body"><h3>Poco contraste</h3><p>Negro sobre gris oscuro no se lee.</p></div></article>
+      <article class="card"><div class="stage bg-lt"><div class="fakefont"><img src="descargas/logos/svg/we-rock-rayo-rojo.svg" alt=""><span>We<br>Rock</span></div></div><div class="body"><h3>Reescribirlo</h3><p>No se arma con otra fuente. Usa el archivo.</p></div></article>
+      <article class="card"><div class="stage" style="background:repeating-linear-gradient(45deg,#c97b2a 0 14px,#2a6fc9 14px 28px,#e4e4e4 28px 42px)"><img src="descargas/logos/svg/we-rock-positivo.svg" alt=""></div><div class="body"><h3>Fondos cargados</h3><p>Sobre fotos o texturas, mono blanco y zona limpia.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- COLOR -->
+<section class="s-dark2" id="color">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">05 · Color</p>
+        <h2>Rojo, negro<br>y crema</h2>
+        <p class="lead">Toca cualquier color para copiar su HEX. Los valores CMYK son una referencia para imprenta: pide siempre una prueba de color antes de un tiraje.</p>
+      </div>
+      <a class="btn ghost" href="descargas/we-rock-colores.css" download>Paleta en CSS</a>
+    </div>
+    <div class="swatches">
+      <button class="sw" data-hex="#E8000A" style="background:#E8000A;color:#fff"><span class="copied">Copiado</span>
+        <div><span class="pct">Acento · 10%</span><h3>Rojo Rock</h3></div>
+        <dl><dt>HEX</dt><dd>#E8000A</dd><dt>RGB</dt><dd>232 · 0 · 10</dd><dt>CMYK</dt><dd>0 · 100 · 96 · 9</dd><dt>Pantone</dt><dd>485 C (ref.)</dd></dl></button>
+      <button class="sw" data-hex="#0A0A0A" style="background:#0A0A0A;color:#E8E4DC;box-shadow:inset 0 0 0 1px #2a2a2a"><span class="copied">Copiado</span>
+        <div><span class="pct">Base · 60%</span><h3>Negro</h3></div>
+        <dl><dt>HEX</dt><dd>#0A0A0A</dd><dt>RGB</dt><dd>10 · 10 · 10</dd><dt>CMYK</dt><dd>60 · 40 · 40 · 100</dd></dl></button>
+      <button class="sw" data-hex="#F5F2EB" style="background:#F5F2EB;color:#0F0E0C"><span class="copied">Copiado</span>
+        <div><span class="pct">Respiro · 25%</span><h3>Crema</h3></div>
+        <dl><dt>HEX</dt><dd>#F5F2EB</dd><dt>RGB</dt><dd>245 · 242 · 235</dd><dt>CMYK</dt><dd>0 · 1 · 4 · 4</dd></dl></button>
+      <button class="sw" data-hex="#FFFFFF" style="background:#FFFFFF;color:#0F0E0C"><span class="copied">Copiado</span>
+        <div><span class="pct">Texto · 5%</span><h3>Blanco</h3></div>
+        <dl><dt>HEX</dt><dd>#FFFFFF</dd><dt>RGB</dt><dd>255 · 255 · 255</dd><dt>CMYK</dt><dd>0 · 0 · 0 · 0</dd></dl></button>
+    </div>
+    <div class="ratio" aria-label="Proporción de uso del color">
+      <i style="flex:60;background:#0A0A0A"></i><i style="flex:25;background:#F5F2EB"></i><i style="flex:10;background:#E8000A"></i><i style="flex:5;background:#fff"></i>
+    </div>
+
+    <div class="sub"><div><h3>Neutros de apoyo</h3><p>Para alternar secciones, tarjetas y textos secundarios. Vienen del sitio werock.space.</p></div></div>
+    <div class="secondary">
+      <button class="mini" data-hex="#FF1A22"><i style="background:#FF1A22"></i><b>Rojo hover</b><small>#FF1A22 · botones activos</small></button>
+      <button class="mini" data-hex="#111111"><i style="background:#111111"></i><b>Negro 2</b><small>#111111 · sección alterna</small></button>
+      <button class="mini" data-hex="#161616"><i style="background:#161616"></i><b>Negro 3</b><small>#161616 · tarjetas</small></button>
+      <button class="mini" data-hex="#EDE9DF"><i style="background:#EDE9DF"></i><b>Crema 2</b><small>#EDE9DF · alterna clara</small></button>
+      <button class="mini" data-hex="#E4DFD4"><i style="background:#E4DFD4"></i><b>Crema 3</b><small>#E4DFD4 · bordes claros</small></button>
+      <button class="mini" data-hex="#E8E4DC"><i style="background:#E8E4DC"></i><b>Texto sobre negro</b><small>#E8E4DC</small></button>
+      <button class="mini" data-hex="#AAAAAA"><i style="background:#AAAAAA"></i><b>Texto secundario</b><small>#AAAAAA</small></button>
+      <button class="mini" data-hex="#888888"><i style="background:#888888"></i><b>Gris</b><small>#888888 · notas</small></button>
+    </div>
+    <p class="note">El archivo original de 2018 usaba rojo puro (#FF0000). El rojo oficial vigente es <b>#E8000A</b>, el mismo del sitio y las redes, y es el que traen todos los logos de este kit. Si encuentras piezas viejas con el rojo anterior, reemplázalas.</p>
+  </div>
+</section>
+
+<!-- TIPOGRAFÍA -->
+<section class="s-light" id="tipografia">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">06 · Tipografía</p>
+        <h2>Barlow, de la<br>A a la Z</h2>
+        <p class="lead">Una sola familia para todo: titulares, textos, botones y etiquetas. Es gratuita (Google Fonts) y la puede instalar cualquiera del equipo.</p>
+      </div>
+      <a class="btn ink" href="https://fonts.google.com/specimen/Barlow" target="_blank" rel="noopener">Descargar Barlow</a>
+    </div>
+    <p class="type-hero">Construimos<br><span class="red">estructura</span></p>
+    <div class="weights">
+      <div><small>Black · 900</small><div class="sample" style="font-weight:900">Titulares</div></div>
+      <div><small>ExtraBold · 800</small><div class="sample" style="font-weight:800">Secciones</div></div>
+      <div><small>Bold · 700</small><div class="sample" style="font-weight:700">Etiquetas</div></div>
+      <div><small>Regular · 400</small><div class="sample" style="font-weight:400;text-transform:none">Texto</div></div>
+    </div>
+    <div class="scale">
+      <div><small>Portada · 900 · mayúsculas<br>42 a 82 px · interlineado 0.95</small><span style="font-weight:900;font-size:clamp(34px,5vw,62px);line-height:.95;text-transform:uppercase">Crecer con estructura</span></div>
+      <div><small>Título de sección · 800<br>36 a 62 px</small><span style="font-weight:800;font-size:clamp(28px,3.6vw,44px);line-height:1;text-transform:uppercase">Los 3 sistemas</span></div>
+      <div><small>Etiqueta · 700 · 11 px<br>espaciado 0.22em · rojo</small><span class="label" style="margin:0">Arquitectura de Crecimiento™</span></div>
+      <div><small>Lead · 400 · 20 px</small><span style="font-size:20px;line-height:1.5;color:#3a3833">Diseñamos y operamos sistemas empresariales de crecimiento.</span></div>
+      <div><small>Texto · 400 · 15 a 17 px<br>interlineado 1.6</small><span style="font-size:16px;line-height:1.6;color:#3a3833;max-width:60ch;display:block">Marketing, tecnología y ventas trabajando bajo una sola dirección estratégica, con métricas claras desde el primer mes.</span></div>
+    </div>
+    <p class="note">Si Barlow no está disponible (por ejemplo en un correo), usa Arial. Nunca uses tipografías decorativas, script o serif para piezas de We Rock.</p>
+  </div>
+</section>
+
+<!-- APLICACIONES -->
+<section class="s-dark" id="aplicaciones">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">07 · Sistema gráfico y aplicaciones</p>
+        <h2>Así se ve<br>en la calle</h2>
+        <p class="lead">El sistema de los contenidos propios: masthead con número de edición, numeral fantasma gigante, grano sutil y ritmo de fondos negro, rojo, negro, crema. Úsalo de referencia para piezas nuevas.</p>
+      </div>
+      <a class="btn ghost" href="https://werockagencia.github.io/werock-contenidos/" target="_blank" rel="noopener">Ver contenidos</a>
+    </div>
+    <div class="apps">
+      <figure class="a-post">
+        <div class="post">
+          <div class="mast"><span>Nº 01 · Estructura</span><span>01/09</span></div>
+          <span class="ghost" aria-hidden="true">01</span>
+          <h4>Tu marketing no tiene problema de contenido.<br><span class="red">Tiene problema de estructura.</span></h4>
+          <div class="foot"><img src="descargas/logos/svg/we-rock-negativo.svg" alt="We Rock"><span>werock.space</span></div>
+        </div>
+        <figcaption><b>Post de carrusel · 1080 × 1350</b>Fondo negro, titular en Barlow 900, logo negativo en la esquina.</figcaption>
+      </figure>
+      <figure class="a-story">
+        <div class="story">
+          <img src="descargas/logos/svg/we-rock-sobre-rojo.svg" alt="We Rock">
+          <h4>Diagnóstico estratégico gratuito</h4>
+          <div class="cta">Agenda aquí</div>
+        </div>
+        <figcaption><b>Historia · 1080 × 1920</b>Sobre rojo, siempre la versión sobre rojo.</figcaption>
+      </figure>
+      <figure class="a-card">
+        <div class="bizcard">
+          <div class="front"><img src="descargas/logos/svg/we-rock-negativo.svg" alt="We Rock"></div>
+          <div class="back">
+            <div><b>David Higuera</b><small>Fundador · Dirección Estratégica</small></div>
+            <div class="row"><p>+57 312 576 6056<br>davidh@werock.space<br>werock.space · Bogotá</p><img src="descargas/logos/svg/we-rock-rayo-rojo.svg" alt=""></div>
+          </div>
+        </div>
+        <figcaption><b>Tarjeta · 85 × 55 mm</b>Frente negro con logo centrado; reverso crema.</figcaption>
+      </figure>
+      <figure class="a-sign">
+        <div class="sign">
+          <div class="mail">Para: cliente@empresa.com · Asunto: Propuesta We Rock</div>
+          <p style="margin:0 0 18px">Quedo atento a tus comentarios.</p>
+          <div class="row">
+            <img src="descargas/logos/png/we-rock-positivo-800px.png" alt="We Rock">
+            <span class="bar"></span>
+            <div><b>Nombre Apellido</b><small>Cargo · We Rock</small><small>+57 300 000 0000 · werock.space</small></div>
+          </div>
+        </div>
+        <figcaption><b>Firma de correo</b>Logo positivo en PNG 800 (los correos no leen SVG), 140 px de ancho, Arial para el texto.</figcaption>
+      </figure>
+      <figure class="a-avatar">
+        <div class="avatars">
+          <img src="descargas/logos/redes/we-rock-avatar-rojo-1080px.png" alt="Avatar rojo">
+          <img src="descargas/logos/redes/we-rock-avatar-negro-1080px.png" alt="Avatar negro">
+          <div class="fav"><img src="descargas/logos/favicon/favicon-180px.png" alt="" style="width:56px"><img src="descargas/logos/favicon/favicon-32px.png" alt="" style="width:32px"></div>
+        </div>
+        <figcaption><b>Perfiles y favicon</b>El logo completo cabe en el círculo de recorte de todas las redes.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- VOZ -->
+<section class="s-dark2" id="voz">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">08 · Voz y datos fijos</p>
+        <h2>Cómo escribimos</h2>
+        <p class="lead">Las mismas reglas de las propuestas comerciales aplican a cualquier texto con nuestra firma: redes, correos, presentaciones y anuncios.</p>
+      </div>
+    </div>
+    <div class="voice">
+      <div>
+        <h3>Reglas de copy</h3>
+        <ul class="copy-rules">
+          <li><b>Nunca "agencia".</b> Somos una firma de crecimiento estratégico.</li>
+          <li><b>Sin guiones ni rayas como puntuación</b> en texto corrido. Usa coma, punto, dos puntos o paréntesis.</li>
+          <li><b>Traduce la jerga.</b> Si el cliente no la usaría, explícala o cámbiala.</li>
+          <li><b>Nada inventado.</b> Ni cifras, ni testimonios, ni casos sin permiso del cliente.</li>
+          <li><b>Precios en COP</b> con punto de miles: $1.200.000.</li>
+          <li><b>Nombres de sistemas con ™:</b> Arquitectura de Crecimiento™, Infraestructura Digital™, Sistemas de Conversión Comercial™, Dirección Estratégica™.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Datos oficiales</h3>
+        <dl class="contact">
+          <div><dt>Nombre</dt><dd>We Rock (dos palabras, R mayúscula)</dd></div>
+          <div><dt>Web</dt><dd>werock.space</dd></div>
+          <div><dt>Correo</dt><dd>davidh@werock.space</dd></div>
+          <div><dt>WhatsApp</dt><dd>+57 312 576 6056</dd></div>
+          <div><dt>Ciudad</dt><dd>Bogotá, Colombia</dd></div>
+          <div><dt>Reseñas</dt><dd>4.9★ en Google (dato real)</dd></div>
+        </dl>
+        <p class="note">¿Dudas sobre una pieza? Envíala por WhatsApp a David antes de publicarla.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESCARGAS -->
+<section class="s-red" id="descargas">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="label">09 · Descargas</p>
+        <h2>Todo el material,<br>listo para usar</h2>
+      </div>
+    </div>
+    <div class="packs">
+      <a class="pack big" href="descargas/we-rock-brand-kit-completo.zip">
+        <div><span>Recomendado</span><h3>Brand Kit completo</h3><p>Los 8 logos en SVG, PDF y PNG, avatares, favicon y la paleta de color.</p></div>
+        <span class="arrow">Descargar .zip</span>
+      </a>
+      <a class="pack" href="descargas/we-rock-logos-svg.zip"><span>Vector · web y diseño</span><h3>Logos SVG</h3><p>Figma, Canva, web, Illustrator.</p><span class="arrow">Descargar</span></a>
+      <a class="pack" href="descargas/we-rock-logos-pdf.zip"><span>Vector · imprenta</span><h3>Logos PDF</h3><p>Abren editables en Illustrator. Para enviar a imprenta.</p><span class="arrow">Descargar</span></a>
+      <a class="pack" href="descargas/we-rock-logos-png.zip"><span>Imagen · uso rápido</span><h3>Logos PNG</h3><p>Fondo transparente, 800 y 2400 px.</p><span class="arrow">Descargar</span></a>
+      <a class="pack" href="descargas/we-rock-redes-favicon.zip"><span>Redes y web</span><h3>Avatares + favicon</h3><p>Perfiles 1080 px y favicon en todos los tamaños.</p><span class="arrow">Descargar</span></a>
+      <a class="pack" href="descargas/we-rock-colores.css" download><span>Código</span><h3>Paleta CSS</h3><p>Variables listas para pegar en web o propuestas.</p><span class="arrow">Descargar</span></a>
+      <a class="pack" href="https://fonts.google.com/specimen/Barlow" target="_blank" rel="noopener"><span>Google Fonts</span><h3>Tipografía Barlow</h3><p>Gratis. Instala todos los pesos.</p><span class="arrow">Ir a Google Fonts</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="descargas/logos/svg/we-rock-negativo.svg" alt="We Rock">
+    <span>Brand Kit We Rock · Versión 1.0 · Octubre 2026 · Uso interno</span>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('[data-hex]').forEach(function (el) {
+  el.addEventListener('click', function () {
+    var hex = el.dataset.hex;
+    var done = function () { el.classList.add('ok'); setTimeout(function () { el.classList.remove('ok'); }, 1200); };
+    if (navigator.clipboard) navigator.clipboard.writeText(hex).then(done, done); else done();
+    if (el.classList.contains('mini')) { var s = el.querySelector('small'), t = s.textContent; s.textContent = 'Copiado ' + hex; setTimeout(function () { s.textContent = t; }, 1200); }
+  });
+});
+</script>
+</body>
+</html>

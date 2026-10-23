@@ -1,0 +1,20 @@
+/* We Rock · paleta oficial (Brand Kit v1.0, octubre 2026) */
+:root {
+  /* principales */
+  --wr-rojo:        #E8000A;  /* RGB 232 0 10 · CMYK 0 100 96 9 · Pantone 485 C (ref.) */
+  --wr-negro:       #0A0A0A;  /* RGB 10 10 10 · CMYK 60 40 40 100 */
+  --wr-crema:       #F5F2EB;  /* RGB 245 242 235 · CMYK 0 1 4 4 */
+  --wr-blanco:      #FFFFFF;
+  /* apoyo */
+  --wr-rojo-hover:  #FF1A22;
+  --wr-negro-2:     #111111;
+  --wr-negro-3:     #161616;
+  --wr-crema-2:     #EDE9DF;
+  --wr-crema-3:     #E4DFD4;
+  --wr-texto-dk:    #E8E4DC;  /* texto sobre negro */
+  --wr-texto-dk-2:  #AAAAAA;
+  --wr-gris:        #888888;
+  --wr-gris-2:      #555555;
+  /* tipografía */
+  --wr-fuente: 'Barlow', Arial, Helvetica, sans-serif;
+}
